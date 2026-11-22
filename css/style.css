@@ -274,3 +274,26 @@ textarea{min-height:140px;resize:vertical}
   form.card-form,.info-box{padding:28px 22px}
   .about-badge{right:8px;padding:14px 18px}
 }
+
+/* service detail pages */
+.svc-page{display:grid;grid-template-columns:320px 1fr;gap:44px;align-items:start}
+.side{position:sticky;top:110px;display:grid;gap:24px}
+.side-box{background:var(--bg);border-radius:var(--radius);padding:28px;border-top:4px solid var(--cyan)}
+.side-box h3{font-size:19px;margin-bottom:14px}
+.side-box li a{display:block;padding:12px 14px;margin-bottom:6px;background:#fff;border-radius:var(--radius);font-weight:600;font-size:14.5px;color:var(--navy);border-left:3px solid transparent}
+.side-box li a:hover,.side-box li a.on{background:var(--navy);color:#fff;border-left-color:var(--cyan)}
+.side-box.call{background:var(--navy);color:#fff}
+.side-box.call h3{color:#fff}
+.side-box.call p{color:#b9d2e4;margin-bottom:16px;font-size:15px}
+.side-box.call .btn{width:100%;justify-content:center;padding:12px 10px;font-size:14px}
+.svc-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:28px}
+.svc-main h2{font-size:clamp(26px,3.4vw,36px)}
+.svc-main p{color:var(--muted);margin-top:14px}
+.svc-main h3{font-size:21px;margin:30px 0 4px}
+.checks.one{grid-template-columns:1fr}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:34px 0}
+.why div{background:var(--navy);color:#fff;padding:22px;border-radius:var(--radius);text-align:center}
+.why b{display:block;color:var(--cyan);font-size:30px;line-height:1.1}
+.why span{font-size:13.5px;color:#c5d9e8}
+@media (max-width:1000px){.svc-page{grid-template-columns:1fr}.side{position:static;order:2}}
+@media (max-width:620px){.why{grid-template-columns:1fr}}
