@@ -297,3 +297,7 @@ textarea{min-height:140px;resize:vertical}
 .why span{font-size:13.5px;color:#c5d9e8}
 @media (max-width:1000px){.svc-page{grid-template-columns:1fr}.side{position:static;order:2}}
 @media (max-width:620px){.why{grid-template-columns:1fr}}
+
+.svc-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0 0}
+.svc-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+@media (max-width:620px){.svc-gallery{grid-template-columns:1fr}}
